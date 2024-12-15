@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
+<body>
+  <h1>Redux Counter App</h1>
+  <p>A simple counter application built using React and Redux Toolkit.</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  <h2>Features</h2>
+  <ul>
+    <li>Increment and decrement counter functionality.</li>
+    <li>Displays a congratulatory message upon reaching milestones (5, 10, 15, etc.).</li>
+    <li>State management using Redux Toolkit.</li>
+  </ul>
 
-Currently, two official plugins are available:
+  <h2>Installation</h2>
+  <ol>
+    <li>Clone the repository:</li>
+    <pre><code>git clone https://github.com/shshafin/redux-counter-app.git</code></pre>
+    <li>Navigate to the project directory:</li>
+    <pre><code>cd redux-counter-app</code></pre>
+    <li>Install dependencies:</li>
+    <pre><code>npm install</code></pre>
+    <li>Start the development server:</li>
+    <pre><code>npm run dev</code></pre>
+  </ol>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  <h2>Usage</h2>
+  <ol>
+    <li>Open the application in your browser at <code>http://localhost:3000</code>.</li>
+    <li>Use the increment and decrement buttons to adjust the counter value.</li>
+    <li>Milestone messages will appear at values like 5, 10, 15, and so on.</li>
+  </ol>
 
-## Expanding the ESLint configuration
+  <h2>Project Structure</h2>
+  <ul>
+    <li><strong>redux/</strong>: Contains Redux logic including slices and hooks.</li>
+    <li><strong>App.tsx</strong>: Main application component.</li>
+    <li><strong>index.tsx</strong>: Entry point of the application.</li>
+  </ul>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+  <h2>License</h2>
+  <p>This project is licensed under the MIT License.</p>
+</body>
