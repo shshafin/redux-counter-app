@@ -32,7 +32,7 @@
   <ul>
     <li><strong>redux/</strong>: Contains Redux logic including slices and hooks.</li>
     <li><strong>App.tsx</strong>: Main application component.</li>
-    <li><strong>index.tsx</strong>: Entry point of the application.</li>
+    <li><strong>main.tsx</strong>: Entry point of the application.</li>
   </ul>
 
   <h2>License</h2>
